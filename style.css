@@ -26,5 +26,22 @@ a {
     border: 5px dashed #FF4DB8;
     width: 500px;
     padding: 20px;
-    margin: auto;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating {
+    animation: float 2s ease-in-out infinite;
 }
