@@ -26,6 +26,7 @@ a {
     border: 5px dashed #FF4DB8;
     width: 500px;
     padding: 20px;
+    animation: float 2s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -40,8 +41,4 @@ a {
     100% {
         transform: translateY(0px);
     }
-}
-
-.floating {
-    animation: float 2s ease-in-out infinite;
 }
