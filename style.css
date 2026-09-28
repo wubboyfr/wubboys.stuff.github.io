@@ -3,6 +3,7 @@ body {
     font-family: "Comic Sans MS";
     background-image: url("UTDR_BG.gif");
     background-repeat: repeat;
+    background-size: 200px;
 }
 
 h1 {
