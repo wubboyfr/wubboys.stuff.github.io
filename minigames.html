@@ -1,30 +1,95 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <title>dumb minigames</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
         .hidden {
-            display: none;
+            display: none !important;
+        }
+
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        #score {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        #exit {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        #exit:hover {
+            background-color: #cc0000;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #clicker {
+            padding: 20px 40px;
+            background-color: #007bff;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            user-select: none;
+            margin: 20px 0;
+        }
+
+        #clicker:active {
+            transform: scale(0.95);
         }
     </style>
 </head>   
-    
 <body>
+
+    <div class="top-bar">
+        <p id="score" class="hidden">Score: 0</p>
+        <button id="exit" class="hidden">EXIT</button>
+    </div>
 
     <div class="profile">
         <h1>DUMB MINIGAMES</h1>
         <h2>if you're bored</h2>
 
-        <div id="clicker" style="cursor: pointer; user-select: none;">
+        <div id="clicker">
             CLICK ME
         </div>
-
-        <p id="score" class="hidden">Score: 0</p>
-        <button id="exit" class="hidden">EXIT</button>
 
         <a href="games.html">GO BACK</a>
     </div>
@@ -45,5 +110,4 @@
         });
     </script>
 </body>
-    
 </html>
