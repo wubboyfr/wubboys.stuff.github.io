@@ -19,6 +19,11 @@ a {
     color: white;
     padding: 10px;
     text-decoration: none;
+    transition: transform 0.2s;
+}
+
+a:hover {
+    transform: scale(1.1);
 }
 
 .profile {
