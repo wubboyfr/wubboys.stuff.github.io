@@ -1,6 +1,8 @@
 body {
     background-color: #4B0082;
     font-family: "Comic Sans MS";
+    background-image: url("UTDR_BG.gif");
+    background-repeat: repeat;
 }
 
 h1 {
