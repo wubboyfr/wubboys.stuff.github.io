@@ -20,6 +20,7 @@ a {
     padding: 10px;
     text-decoration: none;
     transition: transform 0.2s;
+    display: inline-block;
 }
 
 a:hover {
