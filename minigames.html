@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 
-<html>
-
+<html lang="en">
+    
 <head>
-
+    <meta charset="UTF-8">
     <title>dumb minigames</title>
     <link rel="stylesheet" href="style.css">
-
-</head>
-
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>   
+    
 <body>
 
     <div class="profile">
-
         <h1>DUMB MINIGAMES</h1>
         <h2>if you're bored</h2>
 
-        <a href="games.html">
-            GO BACK
-        </a>
+        <div id="clicker" style="cursor: pointer; user-select: none;">
+            CLICK ME
+        </div>
 
+        <p id="score" class="hidden">Score: 0</p>
+        <button id="exit" class="hidden">EXIT</button>
+
+        <a href="games.html">GO BACK</a>
     </div>
 
-</body>
+    <script>
+        let score = 0;
 
+        const clicker = document.getElementById("clicker");
+        const scoreText = document.getElementById("score");
+        const exitBtn = document.getElementById("exit");
+
+        clicker.addEventListener("click", function() {
+            score++;
+            scoreText.textContent = "Score: " + score;
+
+            scoreText.classList.remove("hidden");
+            exitBtn.classList.remove("hidden");
+        });
+    </script>
+</body>
+    
 </html>
