@@ -28,6 +28,8 @@ a:hover {
 }
 
 .profile {
+    position: relative;
+    z-index: 1;
     background-color: #FFF0FA;
     border: 5px dashed #FF4DB8;
     width: 500px;
@@ -63,24 +65,12 @@ a:hover {
     animation: fly 5s linear infinite;
 }
 
-@keyframes fly {
+@keyframes star-flight {
     from {
-        transform: translate(0, 0);
+        transform: translate(0, 0) rotate(0deg);
     }
 
     to {
-        transform: translate(-300px, -300px);
+        transform: translate(var(--dx), var(--dy)) rotate(var(--spin));
     }
-}
-
-.small {
-    font-size: 15px;
-}
-
-.medium {
-    font-size: 30px;
-}
-
-.big {
-    font-size: 50px;
 }
