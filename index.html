@@ -35,8 +35,8 @@
     
             star.style.fontSize = (12 + Math.random() * 35) + "px";
     
-            star.style.left = (Math.random() * 100) + "vw";
-            star.style.top = "100vh";
+            star.style.setProperty("--dx", -(window.innerWidth * (0.3 + Math.random() * 0.7)) + "px");
+            star.style.setProperty("--dy", -(window.innerHeight * (0.3 + Math.random() * 0.7)) + "px");
     
             star.style.left = Math.random() * 100 + "vw";
             star.style.top = Math.random() * 100 + "vh";
