@@ -57,6 +57,12 @@ a:hover {
     margin: 15px;
 }
 
+.star {
+    position: absolute;
+    color: yellow;
+    animation: fly 5s linear infinite;
+}
+
 .small {
     font-size: 15px;
 }
