@@ -57,10 +57,14 @@ a:hover {
     margin: 15px;
 }
 
-.star {
-    color: #FFFFFF;
-    position: absolute;
-    left: 20%;
-    top: 20%;
+.small {
+    font-size: 15px;
+}
+
+.medium {
     font-size: 30px;
+}
+
+.big {
+    font-size: 50px;
 }
