@@ -61,7 +61,7 @@ a:hover {
 
 .star {
     position: fixed;
-    color: yellow;
+    color: white;
     pointer-events: none;
     z-index: 0;
 
