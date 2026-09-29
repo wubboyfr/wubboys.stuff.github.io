@@ -63,6 +63,16 @@ a:hover {
     animation: fly 5s linear infinite;
 }
 
+@keyframes fly {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(-300px, -300px);
+    }
+}
+
 .small {
     font-size: 15px;
 }
