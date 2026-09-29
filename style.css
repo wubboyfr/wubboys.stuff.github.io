@@ -56,3 +56,10 @@ a:hover {
     border-radius: 10px;
     margin: 15px;
 }
+
+.star {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    font-size: 30px;
+}
