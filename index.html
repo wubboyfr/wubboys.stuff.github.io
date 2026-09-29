@@ -8,10 +8,6 @@
 </head>
 
 <body>
-    <div class="star small" style="left: 20%; top: 70%;">★</div>
-    <div class="star medium" style="left: 60%; top: 60%;">★</div>
-    <div class="star big" style="left: 80%; top: 40%;">★</div>
-    
     <div class="profile">
 
         <h1>hi! im wubboy :33</h1>
@@ -27,9 +23,36 @@
         <a href="games.html">GAMES</a>
         <a href="music.html">MUSIC</a>
         <a href="stuff.html">OTHER STUFF</a>
-</nav>
+        </nav>
 
     </div>
+
+    <script>
+        function spawnStar() {
+            const star = document.createElement("div");
+            star.className = "star";
+            star.textContent = "★";
+    
+            star.style.fontSize = (12 + Math.random() * 35) + "px";
+    
+            star.style.left = (25 + Math.random() * 70) + "vw";
+            star.style.top = (window.innerHeight + Math.random() * 60) + "px";
+    
+            star.style.setProperty("--dx", -(window.innerWidth * (0.3 + Math.random() * 0.7)) + "px");
+            star.style.setProperty("--dy", -(window.innerHeight + 100 + Math.random() * 200) + "px");
+    
+            star.style.setProperty("--duration", (4 + Math.random() * 5) + "s");
+            star.style.setProperty("--spin", (Math.random() * 1080 - 540) + "deg");
+    
+            document.body.appendChild(star);
+    
+            star.addEventListener("animationend", function() {
+                star.remove();
+            });
+        }
+        spawnStar();
+        setInterval(spawnStar, 500);
+    </script>
 
 </body>
 
