@@ -60,9 +60,12 @@ a:hover {
 }
 
 .star {
-    position: absolute;
+    position: fixed;
     color: yellow;
-    animation: fly 5s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+
+    animation: star-flight var(--duration) linear forwards;
 }
 
 @keyframes star-flight {
