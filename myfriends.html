@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>wubboy's friends :3</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .friends-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .friend {
+            background-color: #FFD6F0;
+            border: 3px solid #FF4DB8;
+            border-radius: 10px;
+            padding: 15px;
+            width: 220px;
+            text-align: center;
+        }
+
+        .friend-pfp {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #FF4DB8;
+        }
+
+        .friend h2 {
+            color: #D63391;
+        }
+
+        .friend-quote {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile">
+
+        <h1>MY FRIENDS!! 💖</h1>
+
+        <p>some of the coolest people i know <3</p>
+
+        <nav>
+            <a href="index.html">HOME</a>
+        </nav>
+
+        <div class="friends-container">
+
+            <div class="friend">
+
+                <img
+                    src="images/wubboy.png"
+                    alt="Friend's profile picture"
+                    class="friend-pfp"
+                >
+
+                <h2>Friend's Name</h2>
+
+                <p>
+                    <b>Pronouns:</b> they/them
+                </p>
+
+                <p class="friend-quote">
+                    "Something they said"
+                </p>
+
+                <p>
+                    Your description about this friend goes here!
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="stars.js"></script>
+
+</body>
+</html>
