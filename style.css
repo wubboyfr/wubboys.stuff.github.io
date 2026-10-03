@@ -68,7 +68,7 @@ a:hover {
     animation: star-flight var(--duration) linear forwards;
 }
 
-@keyframes star-flight {
+@keyframes star-floaty-thing {
     from {
         transform: translate(0, 0) rotate(0deg);
     }
