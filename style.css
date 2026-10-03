@@ -65,7 +65,7 @@ a:hover {
     pointer-events: none;
     z-index: 0;
 
-    animation: star-flight var(--duration) linear forwards;
+    animation: star-floaty-thing var(--duration) linear forwards;
 }
 
 @keyframes star-floaty-thing {
